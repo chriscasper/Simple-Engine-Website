@@ -1,0 +1,9 @@
+{% extends "base.njk" %}
+
+{% block content %}
+<article class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+  <div class="prose prose-stone prose-lg max-w-none prose-headings:font-display prose-a:text-brand prose-code:before:content-none prose-code:after:content-none">
+    {{ content | safe }}
+  </div>
+</article>
+{% endblock %}

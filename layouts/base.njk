@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ site.language or 'en' }}">
+<head>
+  {% include "partials/head.njk" %}
+</head>
+<body class="min-h-screen bg-stone-50 text-stone-900 antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-3 focus:py-2 focus:shadow">
+    Skip to content
+  </a>
+
+  <header class="sticky top-0 z-40 border-b border-stone-200/80 bg-stone-50/90 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-4 sm:px-6" aria-label="Primary">
+      <a href="/" class="inline-flex items-center" aria-label="Simple Engine home">
+        <img src="/logo.svg" alt="Simple Engine" width="206" height="50" class="h-8 w-auto sm:h-9" />
+      </a>
+      <div class="flex items-center gap-5 text-sm font-medium text-stone-600 sm:gap-7">
+        <a href="/docs" class="transition hover:text-brand">Docs</a>
+        <a href="/blog" class="transition hover:text-brand">Blog</a>
+        <a
+          href="https://github.com/Huelio/Simple-Engine"
+          class="transition hover:text-brand"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Simple Engine on GitHub"
+        >GitHub</a>
+        <a href="/docs/getting-started" class="btn btn-sm hidden sm:inline-flex">Get started</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="border-t border-stone-200 bg-white">
+    <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <div>
+        <a href="/" class="inline-flex items-center" aria-label="Simple Engine home">
+          <img src="/logo.svg" alt="Simple Engine" width="206" height="50" class="h-7 w-auto" />
+        </a>
+        <p class="mt-2 text-sm text-stone-500">A seriously simple static site generator.</p>
+      </div>
+      <div class="flex flex-wrap gap-5 text-sm text-stone-600">
+        <a href="/docs" class="hover:text-brand">Docs</a>
+        <a href="/blog" class="hover:text-brand">Blog</a>
+        <a href="https://github.com/Huelio/Simple-Engine" class="hover:text-brand" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="/feed.xml" class="hover:text-brand">RSS</a>
+      </div>
+    </div>
+    <div class="border-t border-stone-100">
+      <p class="mx-auto max-w-6xl px-4 py-4 text-center text-xs text-stone-400 sm:px-6 sm:text-left">
+        &copy; {{ 'now' | date('yyyy') }} {{ site.author or site.title }} · MIT License ·
+        <a href="https://simpleengine.com" class="hover:text-brand">Built with Simple Engine</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

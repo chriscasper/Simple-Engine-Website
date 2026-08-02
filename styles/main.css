@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-brand: #fe4365;
+  --color-brand-dark: #e02e50;
+  --color-brand-soft: #ffe4ea;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+
+  pre {
+    @apply overflow-x-auto rounded-lg;
+  }
+
+  :not(pre) > code {
+    @apply rounded bg-stone-100 px-1.5 py-0.5 font-mono text-[0.9em] text-stone-800;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg bg-brand px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand;
+  }
+
+  .btn-sm {
+    @apply px-3.5 py-1.5 text-sm;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-lg border border-stone-300 bg-white px-5 py-2.5 text-sm font-semibold text-stone-800 transition hover:border-stone-400 hover:bg-stone-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand;
+  }
+
+  .docs-nav-link {
+    @apply block rounded-md px-3 py-2 text-sm text-stone-600 transition hover:bg-stone-100 hover:text-stone-900;
+  }
+
+  .docs-nav-link.is-active {
+    @apply bg-brand-soft font-medium text-brand-dark;
+  }
+
+  .hero-atmosphere {
+    background:
+      radial-gradient(ellipse 80% 60% at 10% -10%, rgb(255 228 234 / 0.85), transparent 55%),
+      radial-gradient(ellipse 60% 50% at 90% 10%, rgb(254 243 199 / 0.45), transparent 50%),
+      linear-gradient(180deg, rgb(250 250 249) 0%, rgb(245 245 244) 100%);
+  }
+
+  .code-panel {
+    background:
+      linear-gradient(160deg, #4a1524 0%, #0f172a 55%, #0c1222 100%);
+    box-shadow: 0 20px 40px -24px rgb(15 23 42 / 0.55);
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.7s ease both;
+  }
+
+  .animate-delay-1 {
+    animation-delay: 0.08s;
+  }
+
+  .animate-delay-2 {
+    animation-delay: 0.16s;
+  }
+
+  .animate-delay-3 {
+    animation-delay: 0.24s;
+  }
+
+  .animate-delay-4 {
+    animation-delay: 0.32s;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
+  }
+}

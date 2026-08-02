@@ -1,0 +1,17 @@
+{
+  "name": "simple-engine-website",
+  "version": "1.0.0",
+  "description": "Official website and documentation for Simple Engine",
+  "type": "module",
+  "scripts": {
+    "dev": "simple dev",
+    "build": "simple build",
+    "dev:drafts": "simple dev --drafts"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.0.0",
+    "simple-engine": "file:../Simple-Engine",
+    "tailwindcss": "^4.0.0"
+  }
+}
