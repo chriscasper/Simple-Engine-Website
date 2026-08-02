@@ -7,7 +7,7 @@ description: Move from the legacy Gulp-based Simple Engine to the modern 2.0 rew
 
 Simple Engine 2.0 is a complete rewrite. If you still have a site on the older Gulp / Swig / Bootstrap stack, use this guide to move over.
 
-For the full checklist, see [MIGRATION.md](https://github.com/Huelio/Simple-Engine/blob/main/MIGRATION.md) on GitHub. Version numbers in that file may say “v3” from an earlier plan — the shipped release is **2.0.0**.
+For the full checklist, see [MIGRATION.md](https://github.com/chriscasper/Simple-Engine/blob/main/MIGRATION.md) on GitHub. That file may still mention older version numbering from an earlier plan — the shipped release is **2.0.0** (migrating from Gulp-based **1.x**).
 
 ## Breaking changes
 
@@ -23,7 +23,7 @@ For the full checklist, see [MIGRATION.md](https://github.com/Huelio/Simple-Engi
 ## High-level steps
 
 1. **Backup** your current site
-2. **Scaffold** a fresh project with `npx simple-engine init my-site-new`
+2. **Scaffold** a fresh project with `npx simple-engine@latest init my-site-new`
 3. **Port config** from `config.json` into `simple.config.js`
 4. **Convert content** from HTML to Markdown with frontmatter
 5. **Move layouts** from Swig to Nunjucks (syntax is close; update extends/includes)

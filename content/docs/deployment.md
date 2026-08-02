@@ -41,6 +41,8 @@ npm run build
 - Build command: `npm run build`
 - Output directory: `dist`
 
+This documentation site is deployed to Cloudflare Pages as the `simpleengine` project (`yarn deploy` in the website repo).
+
 ## Anywhere else
 
 The `dist` directory is plain HTML, CSS, and assets. Upload it to:

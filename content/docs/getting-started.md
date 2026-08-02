@@ -7,10 +7,10 @@ description: Install Simple Engine and create your first site.
 
 ## Using npx (recommended)
 
-Create a new project without installing anything globally:
+No global install needed — pull the published package from npm:
 
 ```bash
-npx simple-engine init my-site
+npx simple-engine@latest init my-site
 cd my-site
 npm install
 npm run dev
@@ -30,8 +30,17 @@ npm run dev
 
 ## Add to an existing project
 
+Install from npm as a project dependency:
+
 ```bash
 npm install simple-engine --save-dev
+```
+
+Or pin a version:
+
+```bash
+npm install simple-engine@2 --save-dev
+npx simple-engine@2 --version
 ```
 
 Then create `simple.config.js`, `content/`, `layouts/`, and `styles/` — or run `simple init` in an empty folder to scaffold them.

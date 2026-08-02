@@ -29,7 +29,7 @@ Version 2 keeps the promise — Markdown in, static HTML out — while adopting 
 ## Get started
 
 ```bash
-npx simple-engine init my-site
+npx simple-engine@latest init my-site
 cd my-site
 npm install
 npm run dev
@@ -37,4 +37,4 @@ npm run dev
 
 Then open the [docs](/docs) for configuration, templates, SEO, and deployment.
 
-Migrating from an earlier version? See the [migration guide](https://github.com/Huelio/Simple-Engine/blob/main/MIGRATION.md) on GitHub.
+Migrating from an earlier version? See the [migration guide](https://github.com/chriscasper/Simple-Engine/blob/main/MIGRATION.md) on GitHub.

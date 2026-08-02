@@ -5,7 +5,9 @@ order: 10
 description: What Simple Engine is and why you might use it.
 ---
 
-Simple Engine is a fast, modern static site generator. Write content in Markdown, customize layouts with Nunjucks templates, style with Tailwind CSS v4, and deploy static HTML with zero runtime dependencies.
+Simple Engine is a fast, modern static site generator that lets you build websites with Markdown and Tailwind CSS. Write content in Markdown, customize layouts with Nunjucks templates, and deploy static HTML with zero runtime dependencies.
+
+**Package:** [npmjs.com/package/simple-engine](https://www.npmjs.com/package/simple-engine) · **Source:** [github.com/chriscasper/Simple-Engine](https://github.com/chriscasper/Simple-Engine)
 
 ## Features
 
@@ -29,7 +31,7 @@ Simple Engine is a fast, modern static site generator. Write content in Markdown
 
 ## What's new in 2.0
 
-Simple Engine 2.0 is a modern rewrite:
+Simple Engine 2.0 is on a modern 2026 stack:
 
 - TypeScript + Vite + Tailwind CSS v4
 - Nunjucks templates with Markdown + Shiki
@@ -37,10 +39,18 @@ Simple Engine 2.0 is a modern rewrite:
 - SEO + AI discoverability (`llms.txt`, JSON-LD, raw markdown)
 - Validated config/frontmatter and a real default starter template
 
-Coming from the older Gulp-based engine? See [Migration](/docs/migration).
+Migrating from the old Gulp-based 1.x? See [Migration](/docs/migration).
+
+## Support
+
+- [Website](https://simpleengine.com)
+- [npm package](https://www.npmjs.com/package/simple-engine)
+- [GitHub repository](https://github.com/chriscasper/Simple-Engine)
+- [Issue Tracker](https://github.com/chriscasper/Simple-Engine/issues)
+- [Discussions](https://github.com/chriscasper/Simple-Engine/discussions)
 
 ## Next step
 
 Jump to [Getting started](/docs/getting-started) to scaffold a project in under a minute.
 
-These docs are adapted from the [project README](https://github.com/Huelio/Simple-Engine#readme).
+These docs are adapted from the [project README](https://github.com/chriscasper/Simple-Engine#readme).
