@@ -47,6 +47,8 @@ The typography plugin (`prose`) is ideal for Markdown-rendered content.
 
 Put images, fonts, and other files in `public/`. They are copied into the build output as-is (for example `public/logo.svg` → `/logo.svg`).
 
+For favicons, add `public/favicon.svg` or `public/favicon.png` and Simple Engine generates ICO, apple-touch, PWA icons, and a web manifest — see [Favicons](/docs/favicons).
+
 ## Hot reload
 
 Edits to CSS and templates refresh in the dev server automatically.

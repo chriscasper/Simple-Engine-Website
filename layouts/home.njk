@@ -101,4 +101,43 @@ npm run dev</code></pre>
     </div>
   </div>
 </section>
+
+{% if collections.posts and collections.posts.length %}
+<section class="border-b border-stone-200 bg-white">
+  <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <h2 class="font-display text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
+          From the blog
+        </h2>
+        <p class="mt-3 max-w-2xl text-stone-600">
+          Release notes and updates from Simple Engine.
+        </p>
+      </div>
+      <a href="/blog" class="text-sm font-medium text-brand transition hover:opacity-80">View all posts</a>
+    </div>
+
+    <ul class="mt-10 divide-y divide-stone-200 border-t border-stone-200">
+      {% for post in collections.posts | limit(5) %}
+      <li>
+        <a
+          href="{{ post.url }}"
+          class="group flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-4 transition"
+          aria-label="{{ post.data.title }}"
+        >
+          <span class="font-display text-lg font-semibold text-stone-900 group-hover:text-brand">
+            {{ post.data.title }}
+          </span>
+          {% if post.data.date %}
+          <time class="shrink-0 text-sm text-stone-500" datetime="{{ post.data.date }}">
+            {{ post.data.date | date('MMMM d, yyyy') }}
+          </time>
+          {% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
 {% endblock %}

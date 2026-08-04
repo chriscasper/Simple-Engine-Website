@@ -65,7 +65,7 @@ my-site/
 │       └── head.njk      # SEO meta, Open Graph, JSON-LD
 ├── styles/
 │   └── main.css          # Tailwind v4 entry (`@import "tailwindcss"`)
-├── public/               # Static files (copied to output)
+├── public/               # Static files; add favicon.svg or favicon.png here
 ├── dist/                 # Built site (generated)
 ├── simple.config.js
 └── package.json

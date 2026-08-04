@@ -22,6 +22,7 @@ Simple Engine is a fast, modern static site generator that lets you build websit
 - **AI discoverability** — `llms.txt`, raw markdown endpoints, configurable AI crawler rules
 - **Sitemap + RSS** — Generated at build time
 - **Drafts** — Preview unpublished content with `simple dev --drafts`
+- **Favicons** — Generate ICO, apple-touch, and PWA icons from one image
 - **Zero config defaults** — Configure only when you need to
 
 ## Requirements
